@@ -7,9 +7,9 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "terraform-state-eks-s3-bucket"
+    bucket         = "inditown-terraform-state-eks-s3-bucket-test"
     key            = "terraform.tfstate"
-    region         = "us-west-2"
+    region         = "us-east-1"
     dynamodb_table = "terraform-eks-state-locks"
     encrypt        = true
   }
