@@ -6,13 +6,13 @@ terraform {
     }
   }
 
-#  backend "s3" {
-#    bucket         = "terraform-state-eks-s3-bucket"
-#    key            = "terraform.tfstate"
-#    region         = "us-west-2"
-#    dynamodb_table = "terraform-eks-state-locks"
-#    encrypt        = true
-#  }
+  backend "s3" {
+    bucket         = "terraform-state-eks-s3-bucket"
+    key            = "terraform.tfstate"
+    region         = "us-west-2"
+    dynamodb_table = "terraform-eks-state-locks"
+    encrypt        = true
+  }
 }
 
 provider "aws" {
