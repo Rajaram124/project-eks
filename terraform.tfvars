@@ -22,11 +22,11 @@ public_subnet_cidrs = [
 
 cluster_name = "growstack-eks-test-cluster"
 
-cluster_version = "1.31"
+cluster_version = "1.35"
 
 node_groups = {
   general = {
-    instance_types = ["c5.xlarge"]
+    instance_types = ["t3.large"]
     capacity_type  = "ON_DEMAND"
     scaling_config = {
       desired_size = 2
