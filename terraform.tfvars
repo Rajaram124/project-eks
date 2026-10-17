@@ -1,11 +1,11 @@
-region = "us-east-2"
+region = "us-east-1"
 
 vpc_cidr = "10.0.0.0/16"
 
 availability_zones = [
-  "us-east-2a",
-  "us-east-2b",
-  "us-east-2c"
+  "us-east-1a",
+  "us-east-1b",
+  "us-east-1c"
 ]
 
 private_subnet_cidrs = [
@@ -20,7 +20,7 @@ public_subnet_cidrs = [
   "10.0.6.0/24"
 ]
 
-cluster_name = "growstack-eks-test-cluster"
+cluster_name = "eks-test-cluster"
 
 cluster_version = "1.35"
 
